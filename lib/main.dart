@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:shoestore/pages/login/sigeup_page.dart';
 
 import 'pages/home/home_page.dart';
 import 'pages/login/login_page.dart';
+
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {
@@ -17,7 +19,11 @@ class MyApp extends StatelessWidget {
       routes: {
         "/" :(context) =>  LoginPage(),
         "homePage":(context) => HomePage(),
+        "sigeUp":(context) => SigeUp(),
       },
     );
   }
 }
+
+
+
