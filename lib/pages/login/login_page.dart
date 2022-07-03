@@ -10,6 +10,7 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    
     return SafeArea(
       child: Scaffold(
         body: Column(
@@ -19,12 +20,12 @@ class LoginPage extends StatelessWidget {
               child: Image.asset("images/login.png"),
             ),
             InputWidget(
-              textHint: "Enter Username",
+              textHint: "ชื่อผู้ใช้",
               icon: Icons.person,
             ),
             SizedBox(height:15),
             InputWidget(
-              textHint: "Enter Username",
+              textHint: "รหัสผ่าน",
               icon: Icons.lock,
             ),
             SizedBox(height:15),
