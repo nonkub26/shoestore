@@ -1,11 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:shoestore/pages/item/item_page.dart';
 import 'package:shoestore/pages/login/sigeup_page.dart';
 
 import 'pages/home/home_page.dart';
 import 'pages/login/login_page.dart';
 
 
-void main() => runApp(MyApp());
+void main() {
+  runApp(MyApp());
+}
+
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -20,6 +24,7 @@ class MyApp extends StatelessWidget {
         "/" :(context) =>  LoginPage(),
         "homePage":(context) => HomePage(),
         "sigeUp":(context) => SigeUp(),
+        "itemPage":(context) => ItemPage(),
       },
     );
   }

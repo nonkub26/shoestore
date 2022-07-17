@@ -13,7 +13,7 @@ class RowItemsWidget extends StatelessWidget {
         children: [
           for (int i =1; i < 5; i++)
           Container(
-            margin :  EdgeInsets.only(top:10,bottom:10,left: 10),
+            margin :  EdgeInsets.only(top:10,bottom:10,left: 8),
             padding: EdgeInsets.symmetric(horizontal: 10),
             height: 180,
             decoration: boxDecoration,

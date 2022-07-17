@@ -61,7 +61,7 @@ class HomePage extends StatelessWidget {
                 child:  Row(
                   children: [
                     Container(
-                      width: 300.0,
+                      width: 250.0,
                       child: TextFormField(
                         decoration: InputDecoration(
                           border: InputBorder.none,

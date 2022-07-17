@@ -15,19 +15,24 @@ class AllItemsWidget extends StatelessWidget {
       children: [
         for(int i =1; i < 5; i++)
         Container(
-          padding:  EdgeInsets.only(left: 15, right: 15, top: 10),
+          padding:  EdgeInsets.only(left: 15, right: 15, top: 15),
           margin: EdgeInsets.all(8),
           decoration: boxDecoration,
           child: Column(
             children: [
-              Padding(
-                padding: EdgeInsets.all(10),
-                child: Image.asset(
-                  "images/$i.png",
-                   height: 130,
-                    width:130 ,
-                    ),
-                ),
+              InkWell(
+                onTap: (){ //open item detail
+                  Navigator.pushNamed(context, "itemPage");
+                },
+                child: Padding(
+                  padding: EdgeInsets.all(10),
+                  child: Image.asset(
+                    "images/$i.png",
+                     height: 100,
+                      width:130 ,
+                      ),
+                  ),
+              ),
                   Padding(
                     padding: EdgeInsets.only(bottom: 8),
                     child:  Container(
