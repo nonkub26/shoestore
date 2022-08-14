@@ -230,14 +230,80 @@ class BottomCartSheet extends StatelessWidget {
                         ],
                         
                        ),
-                       
+
                       ),
-                    
-                    
                   ],
                   ),
               ),
             ),
+          Container(
+                      margin:
+                       EdgeInsets.only(top: 10),
+                       padding: EdgeInsets.symmetric(vertical:5,horizontal:25),
+                       width: double.infinity,
+                       height :70,
+                       decoration: BoxDecoration(
+                        color: Color(0xFFF5F9FD),
+                       borderRadius: BorderRadius.only(
+                        topLeft:  Radius.circular(25),
+                        topRight: Radius.circular(25),
+                       ),
+                       ),
+                       
+                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Column(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children:  [
+                              Text(
+                                "Total",
+                              style: TextStyle(
+                              fontSize: 17,
+                              fontWeight: FontWeight.bold,
+                              color: darkColor,
+                          ),
+                              ),
+                              Text(
+                          "\$110",
+                          style: TextStyle(
+                            fontSize: 17,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.redAccent,
+                          ),
+                        ),
+                            ],
+                          
+                          ),
+                  Container(
+                    alignment: Alignment.center,
+                    margin: EdgeInsets.symmetric(horizontal: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 5),
+                    width: 120,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      color: Color(0xFF475269),
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                            color: Color(0xFF475269).withOpacity(0.3),
+                            blurRadius: 5,
+                            spreadRadius: 1),
+                      ],
+                    ),
+                    child: Text(
+                      "Check out",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 1),
+                    ),
+                  ),
+                        ],
+                       ),
+                    ),
+
           ],
         ),
       ),
